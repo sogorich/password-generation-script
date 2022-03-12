@@ -12,7 +12,3 @@ def generate_password(max_len: int = 18) -> str:
 	symbols = tuple(symbols + symbols[9::].upper() + ''.join(map(str, [i for i in range(10)]))) 
 
 	return ''.join(random.sample(symbols, max_len)) 
-
-
-
-print(generate_password())
