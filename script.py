@@ -7,8 +7,8 @@ def generate_password(max_len: int = 18) -> str:
 		параметр max_len - длина пароля, по умолчанию 18 символов. 
 	"""
 
-	symbols = '?&$#@!()*abcdefghijklmnopqrstuvwxyz' 
+	symbols = 'abcdefghijklmnopqrstuvwxyz?&$#@!()*-+_.' 
 
-	symbols = tuple(symbols + symbols[9::].upper() + ''.join(map(str, [i for i in range(10)]))) 
+	symbols = tuple(symbols + symbols[:27:].upper() + ''.join(map(str, [i for i in range(10)]))) 
 
 	return ''.join(random.sample(symbols, max_len)) 
