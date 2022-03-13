@@ -10,6 +10,6 @@ generate_password()
 </pre>
 <strong>Result</strong>
 <pre>
-bJljQLfI@Gr7VvaymP
+S?p2NXe1y5$*u@8kcK
 </pre>
  
